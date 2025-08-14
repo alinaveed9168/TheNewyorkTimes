@@ -32,7 +32,7 @@ generate Api-key from https://developer.nytimes.com/
 
 ## ⛓ Project Structure
 
-NYTimes                           # Root group / target
+NYTimes                          
 ├── ArticleList
 │   ├── ArticleListContracts.swift
 │   ├── ArticleListInteractor.swift
@@ -69,16 +69,14 @@ NYTimes                           # Root group / target
 
 # Tests (separate targets)
 NYTimesTests
-└── APIErrorTests
-└── APIErrorURLSessionTests
+├── APIErrorTests.swift
+├── APIErrorURLSessionTests.swift
 ├── ArticleListInteractorTests.swift
 └── ArticleListPresenterTests.swift
 
 NYTimesTimesUITests
 ├── NYTimesTimesUITests.swift
 └── NYTimesTimesUITestsLaunchTests.swift
-
-
 
 ## Architecture
     
