@@ -32,7 +32,10 @@ generate Api-key from https://developer.nytimes.com/
 
 ## ⛓ Project Structure
 
-NYTimes                          
+## Project Structure
+
+```text
+NYTimes
 ├── ArticleList
 │   ├── ArticleListContracts.swift
 │   ├── ArticleListInteractor.swift
