@@ -34,7 +34,7 @@ generate Api-key from https://developer.nytimes.com/
 
 ## Project Structure
 
-```text
+```
 NYTimes
 ├── ArticleList
 │   ├── ArticleListContracts.swift
@@ -80,7 +80,7 @@ NYTimesTests
 NYTimesTimesUITests
 ├── NYTimesTimesUITests.swift
 └── NYTimesTimesUITestsLaunchTests.swift
-
+```
 ## Architecture
     
 This app uses VIPER architecture.
