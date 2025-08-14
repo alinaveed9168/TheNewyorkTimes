@@ -1,0 +1,76 @@
+{
+  "status": "OK",
+  "num_results": 2,
+  "results": [
+    {
+      "uri": "nyt://article/abc123",
+      "url": "https://example.com/story-1",
+      "id": 1,
+      "asset_id": 1,
+      "source": "New York Times",
+      "published_date": "2025-01-15",
+      "updated": "2025-01-15T12:00:00-05:00",
+      "section": "World",
+      "byline": "By John Doe",
+      "title": "VIPER Article One",
+      "abstract": "Stub abstract 1",
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Photo 1",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://placehold.co/120x120",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://placehold.co/440x293",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "uri": "nyt://article/def456",
+      "url": "https://example.com/story-2",
+      "id": 2,
+      "asset_id": 2,
+      "source": "New York Times",
+      "published_date": "2025-02-02",
+      "updated": "2025-02-03T08:01:00-05:00",
+      "section": "US",
+      "byline": "By Jane Roe",
+      "title": "Second VIPER Article",
+      "abstract": "Stub abstract 2",
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Photo 2",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://placehold.co/75x75",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://placehold.co/600x400",
+              "format": "mediumThreeByTwo440",
+              "height": 400,
+              "width": 600
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
