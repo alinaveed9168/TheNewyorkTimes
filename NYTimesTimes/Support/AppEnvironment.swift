@@ -18,17 +18,14 @@ enum AppEnvironment {
         if useStub {
             return StubArticlesRepository()
         } else {
-            let apiKey = Bundle.main.object(forInfoDictionaryKey: "NYT_API_KEY") as? String
-                ?? ProcessInfo.processInfo.environment["NYT_API_KEY"]
-                ?? ""
-            return NYTArticlesRepository(apiKey: apiKey)
+            return NYTArticlesRepository()
         }
     }
 }
 
 struct StubArticlesRepository: ArticlesRepository {
     func mostViewed(section: String, period: Int) -> AnyPublisher<[Article], Error> {
-        guard let url = Bundle.main.url(forResource: "mostviewed_sample", withExtension: "json") else {
+        guard let url = Bundle.main.url(forResource: "Articles_stub", withExtension: "json") else {
             return Fail(error: URLError(.fileDoesNotExist)).eraseToAnyPublisher()
         }
         do {

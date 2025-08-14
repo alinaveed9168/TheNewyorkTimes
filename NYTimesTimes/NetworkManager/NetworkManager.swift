@@ -7,22 +7,6 @@
 import Combine
 import Foundation
 
-// MARK: - HTTP Method
-enum HTTPMethod: String {
-    case get = "GET"
-    case post = "POST"
-}
-
-// MARK: - Endpoint
-struct Endpoint<Response: Decodable> {
-    var path: String
-    var method: HTTPMethod = .get
-    var queryItems: [URLQueryItem] = []
-    var headers: [String: String] = [:]
-    var body: Data? = nil
-    var decoder: JSONDecoder? = nil  // <- optional
-}
-
 // MARK: - Network Client Protocol
 protocol NetworkClient {
     func request<T: Decodable>(_ endpoint: Endpoint<T>) -> AnyPublisher<
@@ -31,7 +15,7 @@ protocol NetworkClient {
 }
 
 // MARK: - URLSession-backed implementation
-final class URLSessionNetworkClient: NetworkClient {
+final class NetworkManager: NetworkClient {
     private let baseURL: URL
     private let session: URLSession
     private let defaultDecoder: JSONDecoder

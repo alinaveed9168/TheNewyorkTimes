@@ -45,7 +45,7 @@ struct ArticleListView: View {
                     }
                 }
             }
-            .navigationTitle("Most Popular")
+            .navigationTitle("NYTimes")
         }
         .onAppear { presenter.onAppear() }
     }
